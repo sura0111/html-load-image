@@ -9,7 +9,7 @@
     "prepare": "husky install && yarn build",
     "lint": "eslint --ext \".ts\" .",
     "prepublishOnly": "yarn build",
-    "release": "standard-version"
+    "release": "standard-version && git push --follow-tags origin main && npm publish"
   },
   "lint-staged": {
     "*.ts": "eslint"
