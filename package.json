@@ -25,13 +25,15 @@
   "files": [
     "lib/**/*"
   ],
+  "dependencies": {
+    "blueimp-load-image": "^5.16.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/blueimp-load-image": "^5.14.4",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
-    "blueimp-load-image": "^5.16.0",
     "eslint": "^8.4.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
