@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sura0111/html-load-image/compare/v1.2.0...v1.3.0) (2021-12-05)
+
+
+### Features
+
+* update release script ([f97ce9b](https://github.com/sura0111/html-load-image/commit/f97ce9b701a2906de1d62df40ea5040ec24435a2))
+
 ## [1.2.0](https://github.com/sura0111/html-load-image/compare/v1.1.0...v1.2.0) (2021-12-05)
 
 
