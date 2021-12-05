@@ -9,7 +9,7 @@
     "lint": "eslint --ext \".ts\" ."
   },
   "lint-staged": {
-    "*.{ts}": "eslint"
+    "*.ts": "eslint"
   },
   "homepage": "https://github.com/sura0111/html-load-image",
   "repository": {
