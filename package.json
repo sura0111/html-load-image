@@ -2,12 +2,13 @@
   "name": "html-load-image",
   "version": "1.0.0",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "rimraf lib && tsc",
     "prepare": "husky install && yarn build",
     "lint": "eslint --ext \".ts\" .",
-    "postversion" : "git push && git push --tags"
+    "prepublishOnly": "yarn build"  
   },
   "lint-staged": {
     "*.ts": "eslint"
