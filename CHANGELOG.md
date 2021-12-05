@@ -1,0 +1,12 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2021-12-05)
+
+
+### Features
+
+* add declaration ([1bd43fe](https://github.com/sura0111/html-load-image/commit/1bd43feb609294673fd162cb7beb8144cbac0939))
+* add more script ([71e88db](https://github.com/sura0111/html-load-image/commit/71e88db62ed593a54de517ea4200b3455bebe720))
+* update output files ([13a9b0b](https://github.com/sura0111/html-load-image/commit/13a9b0b944d10afb7b1872501f31ed022964783c))
