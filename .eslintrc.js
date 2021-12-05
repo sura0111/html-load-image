@@ -1,9 +1,11 @@
+/** @type import('eslint').Linter.Config */
 module.exports = {
   root: true,
   env: {
     browser: true,
     es2021: true,
   },
+  ignorePatterns: ['lib'],
   extends: ['airbnb-base', 'plugin:import/recommended', 'plugin:import/typescript', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
