@@ -2,7 +2,7 @@ import blueImpLoadImage from 'blueimp-load-image'
 import { LoadImageOptions, LoadImagesOptions } from './definitions'
 import getSources from './getSources'
 
-const loadImage = (source: string | File | Blob | null, options?: LoadImagesOptions): Promise<string> => {
+const loadImage = (source: string | File | Blob | null, options?: LoadImageOptions): Promise<string> => {
   return new Promise((resolve, reject) => {
     if (!source) {
       reject()

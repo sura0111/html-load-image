@@ -8,8 +8,8 @@
     "build": "rimraf lib && tsc",
     "prepare": "husky install && yarn build",
     "lint": "eslint --ext \".ts\" .",
-    "prepublishOnly": "yarn build",
-    "release": "standard-version && git push --follow-tags origin main && npm publish"
+    "version": "auto-changelog -p && git add CHANGELOG.md && yarn build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "lint-staged": {
     "*.ts": "eslint"
@@ -34,6 +34,7 @@
     "@types/blueimp-load-image": "^5.14.4",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
+    "auto-changelog": "^2.3.0",
     "eslint": "^8.4.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -43,7 +44,6 @@
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
-    "standard-version": "^9.3.2",
     "typescript": "^4.5.2"
   }
 }
