@@ -7,7 +7,7 @@ This package is to get the image files as dataURLs from `Event` or `DragEvent`. 
 ## Install
 
 ```sh
-yarn add html-image-load
+yarn add html-load-image
 ```
 
 ## Definitions
