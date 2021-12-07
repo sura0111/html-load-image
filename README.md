@@ -25,6 +25,6 @@ type LoadImagesOptions = LoadImageOptions & { maxLoadImageCount: number }
 ## Usage
 
 ```ts
-const image = getImage(event)
-const images = getImages(event, { maxLoadImageCount: 5 })
+const image = await getImage(event)
+const images = await getImages(event, { maxLoadImageCount: 5 })
 ```
