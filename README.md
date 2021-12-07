@@ -13,13 +13,13 @@ yarn add html-load-image
 ## Definitions
 
 ```ts
-getImage: (event: Event, options?: LoadImageOptions) => Promise<string>
+type getImage = (event: Event, options?: LoadImageOptions) => Promise<string>
 
-getImages: (event: Event, options?: LoadImagesOptions) => Promise<string[]>
+type getImages = (event: Event, options?: LoadImagesOptions) => Promise<string[]>
 
 type LoadImageOptions = Exclude<BlueImpLoadImageOptions, 'orientation' | 'meta' | 'canvas'>
 
-type LoadImagesOptions = BlueImpLoadImageOptions & { maxLoadImageCount: number }
+type LoadImagesOptions = LoadImageOptions & { maxLoadImageCount: number }
 ```
 
 ## Usage
