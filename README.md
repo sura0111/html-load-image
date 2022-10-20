@@ -17,7 +17,7 @@ type getImage = (event: Event, options?: LoadImageOptions) => Promise<string>
 
 type getImages = (event: Event, options?: LoadImagesOptions) => Promise<string[]>
 
-type LoadImageOptions = Exclude<BlueImpLoadImageOptions, 'orientation' | 'meta' | 'canvas'>
+type LoadImageOptions = Omit<BlueImpLoadImageOptions, 'orientation' | 'meta' | 'canvas'>
 
 type LoadImagesOptions = LoadImageOptions & { maxLoadImageCount: number }
 ```
