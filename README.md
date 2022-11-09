@@ -19,7 +19,9 @@ type getImages = (event: Event, options?: LoadImagesOptions) => Promise<string[]
 
 type LoadImageOptions = Omit<BlueImpLoadImageOptions, 'orientation' | 'meta' | 'canvas'>
 
-type LoadImagesOptions = LoadImageOptions & { maxLoadImageCount: number }
+interface LoadImagesOptions extends LoadImageOptions {
+  maxLoadImageCount: number
+}
 ```
 
 ## Usage
